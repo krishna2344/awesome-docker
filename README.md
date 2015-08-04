@@ -37,29 +37,26 @@ _Source:_ [What is Docker](https://www.docker.com/whatisdocker/)
 
 * [What is Docker ?](#what-is-docker)
 * [Where to start ?](#where-to-start)
-* [What is Docker ?](#what-is-docker)
-* [Where to start ?](#where-to-start)
 * [Useful Articles](#useful-articles)
- * [Main Resources](#main-resources)
- * [General Articles](#general-articles)
- * [Development]()
+  * [Main Resources](#main-resources)
+  * [General Articles](#general-articles)
+  * [Development](#development)
     * [Continuous Integration](#continuous-integration)
- * [File System / Images](#file-system--images)
+  * [File System / Images](#file-system--images)
     * [Deep Dive](#deep-dive)
     * [Optimizing Images](#optimizing-images)
- * [Monitoring / Logging](#monitoring--logging)
- * [Networking](#networking)
+  * [Monitoring / Logging](#monitoring--logging)
+    * [Performances](#performances)
+  * [Networking](#networking)
     * [Service Discovery](#service-discovery)
     * [Multi-Server](#multi-server)
     * [Swarming](#raspberry-pi)
- * [Infrastructure](#infrastructure)
+  * [Infrastructure](#infrastructure)
     * [Metal](#metal)
     * [Cloud Infrastructure](#cloud-infrastructure)
- * [Good Tips](#good-tips)
- * [Security](#security)
- * [Performances](#performances)
- * [Other](#other)
-    * [Raspberry Pi](#raspberry-pi)
+  * [Good Tips](#good-tips)
+  * [Raspberry Pi](#raspberry-pi)
+  * [Security](#security)
 * [Books](#books)
 * [Dockerfile](#dockerfile)
 * [Newsletter](#newsletter)
@@ -96,6 +93,7 @@ _Source:_ [What is Docker](https://www.docker.com/whatisdocker/)
 
 * [Docker Weekly](http://blog.docker.com/docker-weekly-archives/) Huge resource
 * [Docker Cheat Sheet](https://github.com/wsargent/docker-cheat-sheet) by [@wsargent](https://github.com/wsargent) __MUST SEE__
+* [The New Stack](http://thenewstack.io/?s=docker) Tutorials, articles, high level stuff
 * [Century Links Labs](http://www.centurylinklabs.com/category/docker/)
 * [Valuable Docker Links](http://www.nkode.io/2014/08/24/valuable-docker-links.html) Very complete
 * [Docker Ecosystem](http://www.mindmeister.com/389671722/docker-ecosystem) (Mind Map) __MUST SEE__
@@ -121,8 +119,6 @@ _Source:_ [What is Docker](https://www.docker.com/whatisdocker/)
 * [Deploying NGINX with Docker](http://nginx.com/blog/deploying-nginx-nginx-plus-docker/)
 * [Eight Docker Development Patterns](http://www.hokstad.com/docker/patterns)
 * [Rails Development Environment for OS X using Docker](http://allenan.com/docker-rails-dev-environment-for-osx/)
-* [Logging on Docker: What You Need to Know](http://java.dzone.com/articles/logging-docker-what-you-need) + see the [video](https://vimeo.com/123341629) (~50min)
-* [Comparing Five Monitoring Options for Docker](http://rancher.com/comparing-monitoring-options-for-docker-deployments/)
 * [Minimalistic data-only container for Docker Compose](http://dockermeetupsinbordeaux.github.io/docker-compose/data-container/2015/03/01/minimalistic-docker-data-container.html) (Written Mar 1, 2015)
 * [Running Docker Containers with Systemd](http://container-solutions.com/2015/04/running-docker-containers-with-systemd/)
 * [Dockerizing Flask With Compose and Machine - From Localhost to the Cloud](https://realpython.com/blog/python/dockerizing-flask-with-compose-and-machine-from-localhost-to-the-cloud/) -- [GitHub](https://github.com/realpython/orchestrating-docker) Learn how to deploy an application using Docker Compose and Docker Machine (written 17 April 2015)
@@ -133,23 +129,72 @@ _Source:_ [What is Docker](https://www.docker.com/whatisdocker/)
 * [From Local Development to Remote Deployment with Docker Machine and Compose](https://developer.rackspace.com/blog/dev-to-deploy-with-docker-machine-and-compose/) (written 2 JUL 2015)
 * [Docker: Build, Ship and Run Any App, Anywhere](http://delftswa.github.io/chapters/docker/index.html) by [Martijn Dwars](https://github.com/MartijnDwars), [Wiebe van Geest](https://github.com/wrvangeest), [Rik Nijessen](https://github.com/gewoonrik), and [Rick Wieman](https://github.com/RickWieman) from [Delft University of Technology](http://www.tudelft.nl/) (written 2 JUL 2015)
 * [Joining the Docker Ship](http://thenewstack.io/joining-the-docker-ship-and-go) Learn how to contribute to docker (written 9 JUL 2015)
+* [Evolving Container Architectures](http://wikibon.com/evolving-container-architectures/) very high quality article with video interviews and uber useful (and probably reusable) schema (written 20 JUL 2015)
 
-## Deep Dive
+## Development
+* [Understanding the Docker Cache for Faster Builds](http://thenewstack.io/understanding-the-docker-cache-for-faster-builds/) See also [File System / Images](#file-system--images)
+* [WEB DEVELOPMENT WITH DOCKER, DOCKER-MACHINE, DOCKER-COMPOSE, TMUX, TMUXINATOR, AND WATCHDOG](http://blog.docker.com/2015/05/web-development-with-docker-docker-machine-docker-compose-tmux-tmuxinator-and-watchdog)
+* Presentation: Docker and JBoss - the perfect combination
+ * [Vidéo](http://www.youtube.com/watch?v=4uQ6gR_xZhE)
+ * [Slides](https://goldmann.pl/presentations/2014-vjbug-docker)
+ * [Code source](https://github.com/goldmann/goldmann.pl/tree/master/.presentations/2014-vjbug-docker/demos)
+* [Debugging a Docker container](http://blog.loof.fr/2014/06/debugging-docker-container.html)
+* [Multi-Service Local Development Environment with Vagrant and Docker](http://devbandit.com/2015/05/29/vagrant-and-docker.html) (written 29 MAY 2015)
+
+### Continuous Integration
+* [Docker and Phoenix: How to Make Your Continuous Integration More Awesome](http://ariya.ofilabs.com/2014/12/docker-and-phoenix-how-to-make-your-continuous-integration-more-awesome.html)
+* [Continuous Integration Using Docker, Maven and Jenkins](http://www.wouterdanes.net/2014/04/11/continuous-integration-using-docker-maven-and-jenkins.html)
+
+
+## File System / Images
+
+### Deep Dive
 * [Creating containers - Part 1](http://crosbymichael.com/creating-containers-part-1.html) This is part one of a series of blog posts detailing how docker creates containers. By [@crosbymichael](https://github.com/crosbymichael)
+* [Dockerfile Best Practices](http://crosbymichael.com/dockerfile-best-practices-take-2.html)
 * [Data-only container madness](http://container42.com/2014/11/18/data-only-container-madness/)
+* [ClusterHQ brings databases to Docker with Flocker](https://opensource.com/business/14/8/clusterhq-brings-databases-docker-flocker)
+
+### Optimizing Images
+* [Create the smallest possible Docker container](http://blog.xebia.com/2014/07/04/create-the-smallest-possible-docker-container/)
+* [Creating a Docker image from your code](http://blog.tutum.co/2014/04/10/creating-a-docker-image-from-your-code/)
+* [Optimizing Docker Images](http://www.centurylinklabs.com/optimizing-docker-images/?hvid=1OW0br)
+* [How to Optimize Your Dockerfile](http://blog.tutum.co/2014/10/22/how-to-optimize-your-dockerfile/) by [@tutumcloud](https://github.com/tutumcloud)
+* [Building Docker Images for Static Go Binaries](https://medium.com/@kelseyhightower/optimizing-docker-images-for-static-binaries-b5696e26eb07) by [@kelseyhightower](https://github.com/kelseyhightower)
+* [Squashing Docker Images](http://jasonwilder.com/blog/2014/08/19/squashing-docker-images/) by [@jwilder](https://github.com/jwilder)
+* [Dockerfile Golf (or optimizing the Docker build process)](http://www.davidmkerr.com/2014/08/dockerfile-golf-or-optimizing-docker.html)
+
+## Monitoring / Logging
+* [Logging on Docker: What You Need to Know](http://java.dzone.com/articles/logging-docker-what-you-need) + see the [video](https://vimeo.com/123341629) (~50min)
+* [Comparing Five Monitoring Options for Docker](http://rancher.com/comparing-monitoring-options-for-docker-deployments/)
+* [Logging with ELK and Docker](http://evanhazlett.com/2014/11/Logging-with-ELK-and-Docker/)
+* [Automating Docker Logging: ElasticSearch, Logstash, Kibana, and Logspout](http://nathanleclaire.com/blog/2015/04/27/automating-docker-logging-elasticsearch-logstash-kibana-and-logspout/)
+
+### Performances
+* [Performance Analysis of Docker on Red Hat Enterprise Linux 7](http://developerblog.redhat.com/2014/08/19/performance-analysis-docker-red-hat-enterprise-linux-7/)
+* [Distrubuted JMeter testing using Docker](http://srivaths.blogspot.fr/2014/08/distrubuted-jmeter-testing-using-docker.html?m=1)
+* [nsinit: per-container resource monitoring of Docker containers on RHEL/Fedora](http://www.breakage.org/2014/09/03/nsinit-per-container-resource-monitoring-of-docker-containers-on-rhelfedora/)
 
 ## Networking
 * [Using Docker Machine with Weave 0.10](http://weaveblog.com/2015/04/22/using-docker-machine-with-weave-0-10/) (written 22 APR 2015)
 * [How to Route Traffic through a Tor Docker container](https://blog.jessfraz.com/post/routing-traffic-through-tor-docker-container/) by [@jfrazelle](https://github.com/jfrazelle) (writtent 20 JUN 2015)
 
-## Metal
-* [How to use Docker on Full Metal](http://blog.bigstep.com/big-data-performance/use-docker-full-metal-cloud/)
-
-## Multi-Server
+### Multi-Server
 * [Using Fig and Flocker to build, test, deploy and migrate multi-server Dockerized apps](https://clusterhq.com/blog/fig-flocker-multi-server-docker-apps/)
 * [A Docker based mini-PaaS](http://shortcircuit.net.au/~prologic/blog/article/2015/03/24/a-docker-based-mini-paas/) by [@prologic](https://github.com/prologic)
 
-## Cloud Infrastructure
+### Service Discovery
+* [Service discovery with Docker](http://adetante.github.io/articles/service-discovery-with-docker-1/)
+* [@progrium](https://github.com/progrium) Service Discovery articles series:
+ * [Consul Service Discovery with Docker](http://progrium.com/blog/2014/08/20/consul-service-discovery-with-docker/)
+ * [Understanding Modern Service Discovery with Docker](http://progrium.com/blog/2014/07/29/understanding-modern-service-discovery-with-docker/)
+ * [Automatic Docker Service Announcement with Registrator](http://progrium.com/blog/2014/09/10/automatic-docker-service-announcement-with-registrator/)
+
+## Infrastructure
+
+### Metal
+* [How to use Docker on Full Metal](http://blog.bigstep.com/big-data-performance/use-docker-full-metal-cloud/)
+
+### Cloud Infrastructure
 * [Cloud Infrastructure Automation for Docker Nodes](http://blog.tutum.co/2015/04/29/cloud-infrastructure-automation-for-docker-nodes/)
 
 ## Good Tips
@@ -165,31 +210,15 @@ _Source:_ [What is Docker](https://www.docker.com/whatisdocker/)
 * [Nginx Proxy for Docker](http://blog.danivovich.com/2015/07/09/nginx-proxy-for-docker-containers) (written 9 JUL 2015)
 * [Dealing with linked containers dependency in docker-compose](http://brunorocha.org/python/dealing-with-linked-containers-dependency-in-docker-compose.html) by [@rochacbruno](http://github.com/rochacbruno)
 
-## Newsletter
-* [Docker Team](https://www.docker.com/)
-* [CenturyLinksLabs](http://www.centurylinklabs.com/)
-* [Tutum](https://dashboard.tutum.co/accounts/register/)
-* [DevOps Weekly](http://devopsweekly.com/)
-* [Shippable](http://blog.shippable.com/)
-* [WebOps weekly](http://webopsweekly.com/)
-
-## Continuous Integration
-* [Docker and Phoenix: How to Make Your Continuous Integration More Awesome](http://ariya.ofilabs.com/2014/12/docker-and-phoenix-how-to-make-your-continuous-integration-more-awesome.html)
-
-## Optimizing Images
-* [Create the smallest possible Docker container](http://blog.xebia.com/2014/07/04/create-the-smallest-possible-docker-container/)
-* [Creating a Docker image from your code](http://blog.tutum.co/2014/04/10/creating-a-docker-image-from-your-code/)
-* [Optimizing Docker Images](http://www.centurylinklabs.com/optimizing-docker-images/?hvid=1OW0br)
-* [How to Optimize Your Dockerfile](http://blog.tutum.co/2014/10/22/how-to-optimize-your-dockerfile/) by [@tutumcloud](https://github.com/tutumcloud)
-* [Building Docker Images for Static Go Binaries](https://medium.com/@kelseyhightower/optimizing-docker-images-for-static-binaries-b5696e26eb07) by [@kelseyhightower](https://github.com/kelseyhightower)
-* [Squashing Docker Images](http://jasonwilder.com/blog/2014/08/19/squashing-docker-images/) by [@jwilder](https://github.com/jwilder)
-* [Dockerfile Golf (or optimizing the Docker build process)](http://www.davidmkerr.com/2014/08/dockerfile-golf-or-optimizing-docker.html)
-
-## Service Discovery
-* [@progrium](https://github.com/progrium) Service Discovery articles series:
- * [Consul Service Discovery with Docker](http://progrium.com/blog/2014/08/20/consul-service-discovery-with-docker/)
- * [Understanding Modern Service Discovery with Docker](http://progrium.com/blog/2014/07/29/understanding-modern-service-discovery-with-docker/)
- * [Automatic Docker Service Announcement with Registrator](http://progrium.com/blog/2014/09/10/automatic-docker-service-announcement-with-registrator/)
+## Raspberry Pi
+* [Docker Pirates ARMed with explosive stuff](http://blog.hypriot.com/) Huge resource on clustering, swarm, docker, pre-installed image for SD card on Raspberry Pi
+* [Docker on Raspberry Pi](http://blog.xebia.com/2014/08/25/docker-on-a-raspberry-pi/)
+* [Fool-Proof Recipe: Docker on the Raspberry Pi](https://www.voxxed.com/blog/2015/04/fool-proof-recipe-docker-on-the-raspberry-pi/) Same article as above but more opinionated.
+* [Raspberry Pi with Docker 1.5.0](http://blog.hypriot.com/post/heavily-armed-after-major-upgrade-raspberry-pi-with-docker-1-dot-5-0/)
+* [Swarming Raspberry Pi – Part 1](http://matthewkwilliams.com/index.php/2015/03/21/swarming-raspberry-pi-part-1/)
+* [Swarming Raspberry Pi, Part 2: Registry & Mirror](http://matthewkwilliams.com/index.php/2015/03/29/swarming-raspberry-pi-part-2-registry-mirror/)
+* [Swarming Raspberry Pi: Docker Swarm Discovery Options](http://matthewkwilliams.com/index.php/2015/04/03/swarming-raspberry-pi-docker-swarm-discovery-options/)
+* [Uniform Development by Docker & QEMU](http://www.instructables.com/id/Uniform-Development-by-Docker-QEMU/)
 
 ## Security
 * [Docker and SELinux](http://www.projectatomic.io/docs/docker-and-selinux/)
@@ -201,28 +230,6 @@ _Source:_ [What is Docker](https://www.docker.com/whatisdocker/)
 * [Lynis is an open source security auditing tool including Docker auditing](https://cisofy.com/lynis/)
 * [Understanding Docker security and best practices](https://blog.docker.com/2015/05/understanding-docker-security-and-best-practices/) (written 5 MAY 2015)
 
-## Performances
-* [Performance Analysis of Docker on Red Hat Enterprise Linux 7](http://developerblog.redhat.com/2014/08/19/performance-analysis-docker-red-hat-enterprise-linux-7/)
-* [Distrubuted JMeter testing using Docker](http://srivaths.blogspot.fr/2014/08/distrubuted-jmeter-testing-using-docker.html?m=1)
-* [nsinit: per-container resource monitoring of Docker containers on RHEL/Fedora](http://www.breakage.org/2014/09/03/nsinit-per-container-resource-monitoring-of-docker-containers-on-rhelfedora/)
-
-## Raspberry Pi
-* [Docker Pirates ARMed with explosive stuff](http://blog.hypriot.com/) Huge resource on clustering, swarm, docker, pre-installed image for SD card on Raspberry Pi
-* [Docker on Raspberry Pi](http://blog.xebia.com/2014/08/25/docker-on-a-raspberry-pi/)
-* [Fool-Proof Recipe: Docker on the Raspberry Pi](https://www.voxxed.com/blog/2015/04/fool-proof-recipe-docker-on-the-raspberry-pi/) Same article as above but more opinionated.
-* [Raspberry Pi with Docker 1.5.0](http://blog.hypriot.com/post/heavily-armed-after-major-upgrade-raspberry-pi-with-docker-1-dot-5-0/)
-* [Swarming Raspberry Pi – Part 1](http://matthewkwilliams.com/index.php/2015/03/21/swarming-raspberry-pi-part-1/)
-* [Swarming Raspberry Pi, Part 2: Registry & Mirror](http://matthewkwilliams.com/index.php/2015/03/29/swarming-raspberry-pi-part-2-registry-mirror/)
-* [Swarming Raspberry Pi: Docker Swarm Discovery Options](http://matthewkwilliams.com/index.php/2015/04/03/swarming-raspberry-pi-docker-swarm-discovery-options/)
-* [Uniform Development by Docker & QEMU](http://www.instructables.com/id/Uniform-Development-by-Docker-QEMU/)
-
-
-## Other
-* Presentation: Docker and JBoss - the perfect combination
- * [Vidéo](http://www.youtube.com/watch?v=4uQ6gR_xZhE)
- * [Slides](https://goldmann.pl/presentations/2014-vjbug-docker)
- * [Code source](https://github.com/goldmann/goldmann.pl/tree/master/.presentations/2014-vjbug-docker/demos)
-
 # Books
 
 * [Docker Book](http://dockerbook.com/) by James Turnbul ([@kartar](https://twitter.com/kartar))
@@ -233,6 +240,14 @@ _Source:_ [What is Docker](https://www.docker.com/whatisdocker/)
 * [Docker Up & Running](http://newrelic.com/docker-book) by [Karl Matthias](https://twitter.com/relistan) and [Sean P. Kane](https://twitter.com/spkane)
 * [Using Docker](http://shop.oreilly.com/product/0636920035671.do) by Adrian Mouat ([@adrianmouat](https://twitter.com/adrianmouat))
 * [Docker: Container-Infrastruktur für Microservices](http://www.bee42.com/dockerbook/) (German) by Peter Roßbach ([@PRossbach](https://twitter.com/PRossbach))
+
+# Newsletter
+* [Docker Team](https://www.docker.com/)
+* [CenturyLinksLabs](http://www.centurylinklabs.com/)
+* [Tutum](https://dashboard.tutum.co/accounts/register/)
+* [DevOps Weekly](http://devopsweekly.com/)
+* [Shippable](http://blog.shippable.com/)
+* [WebOps weekly](http://webopsweekly.com/)
 
 # Tools
 

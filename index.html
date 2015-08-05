@@ -5,31 +5,23 @@
     <title>Awesome-docker by veggiemonk</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" href="stylesheets/normalize.css" media="screen">
-    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
     <link rel="stylesheet" type="text/css" href="stylesheets/github-light.css" media="screen">
   </head>
   <body>
-       <section class="page-header">
+    <section class="page-header">
       <h1 class="project-name">Awesome-docker</h1>
       <h2 class="project-tagline">A curated list of Docker resources and projects</h2>
       <a href="https://github.com/veggiemonk/awesome-docker" class="btn">View on GitHub</a>
       <a href="https://github.com/veggiemonk/awesome-docker/zipball/master" class="btn">Download .zip</a>
       <a href="https://github.com/veggiemonk/awesome-docker/tarball/master" class="btn">Download .tar.gz</a>
-      <!-- GITHUB BUTTON -->
-      <div>
-        <iframe src="https://ghbtns.com/github-btn.html?user=veggiemonk&repo=awesome-docker&type=star&count=true&size=large" frameborder="0" scrolling="0" width="160px" height="30px"></iframe>
-        <iframe src="https://ghbtns.com/github-btn.html?user=veggiemonk&repo=awesome-docker&type=watch&count=true&size=large&v=2" frameborder="0" scrolling="0" width="160px" height="30px"></iframe>
-        <iframe src="https://ghbtns.com/github-btn.html?user=veggiemonk&repo=awesome-docker&type=fork&count=true&size=large" frameborder="0" scrolling="0" width="158px" height="30px"></iframe>
-      </div>
     </section>
-    <!-- GITHUB RIBBON -->
-    <a href="https://github.com/veggiemonk/awesome-docker"><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://camo.githubusercontent.com/a6677b08c955af8400f44c6298f40e7d19cc5b2d/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f677261795f3664366436642e706e67" alt="Fork me on GitHub" data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_right_gray_6d6d6d.png"></a>
-   
 
     <section class="main-content">
       <h1>
-<a id="awesome-docker" class="anchor" href="#awesome-docker" aria-hidden="true"><span class="octicon octicon-link"></span></a>Awesome Docker</h1>
+<a id="awesome-docker--" class="anchor" href="#awesome-docker--" aria-hidden="true"><span class="octicon octicon-link"></span></a>Awesome Docker <a href="https://github.com/sindresorhus/awesome"><img src="https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg" alt="Awesome"></a> <a href="https://gitter.im/veggiemonk/awesome-docker?utm_source=badge&amp;utm_medium=badge&amp;utm_campaign=pr-badge&amp;utm_content=badge"><img src="https://badges.gitter.im/Join%20Chat.svg" alt="Join the chat at https://gitter.im/veggiemonk/awesome-docker"></a>
+</h1>
 
 <blockquote>
 <p>A curated list of Docker resources and projects</p>
@@ -125,7 +117,7 @@ If this list is not complete, you can <a href="https://github.com/veggiemonk/awe
 <li><a href="#deployment">Deployment</a></li>
 <li><a href="#hosting-for-repositories-registries">Hosting for repositories (registries)</a></li>
 <li><a href="#hosting-for-containers">Hosting for containers</a></li>
-<li><a href="#http-reverse-proxy">HTTP Reverse Proxy</a></li>
+<li><a href="#reverse-proxy">Reverse Proxy</a></li>
 <li><a href="#web-interface">Web Interface</a></li>
 <li><a href="#local-container-manager">Local Container Manager</a></li>
 <li><a href="#useful-images">Useful Images</a></li>
@@ -273,7 +265,7 @@ If this list is not complete, you can <a href="https://github.com/veggiemonk/awe
 <ul>
 <li><a href="https://clusterhq.com/blog/fig-flocker-multi-server-docker-apps/">Using Fig and Flocker to build, test, deploy and migrate multi-server Dockerized apps</a></li>
 <li>
-<a href="https://github.com/tubesandlube/blimp">blimp</a> Uses Docker Machine to easily move a container from one Docker host to another, show containers running against all of your hosts, replicate a container across multiple hosts and more. By <a href="https://github.com/defermat">@defermat</a> and <a href="https://github.com/schvin">@schvin</a>
+<a href="http://shortcircuit.net.au/%7Eprologic/blog/article/2015/03/24/a-docker-based-mini-paas/">A Docker based mini-PaaS</a> by <a href="https://github.com/prologic">@prologic</a>
 </li>
 </ul>
 
@@ -351,6 +343,8 @@ If this list is not complete, you can <a href="https://github.com/veggiemonk/awe
 <a href="http://jasonwilder.com/blog/2014/08/19/squashing-docker-images/">Squashing Docker Images</a> by <a href="https://github.com/jwilder">@jwilder</a>
 </li>
 <li><a href="http://www.davidmkerr.com/2014/08/dockerfile-golf-or-optimizing-docker.html">Dockerfile Golf (or optimizing the Docker build process)</a></li>
+<li>
+<a href="https://imagelayers.io/">ImageLayers</a> Visualize Docker images and the layers that compose them.</li>
 </ul>
 
 <h2>
@@ -494,7 +488,8 @@ If this list is not complete, you can <a href="https://github.com/veggiemonk/awe
 <a href="https://github.com/redhataccess/dockerfile_lint">dockerfile_lint</a> (A rule-based 'linter' for Dockerfiles) by <a href="https://github.com/redhataccess">@redhataccess</a>
 </li>
 <li>
-<a href="https://github.com/clusterhq/powerstrip">powerstrip</a> (A tool for prototyping Docker extensions)</li>
+<a href="https://github.com/clusterhq/powerstrip">powerstrip</a> (A tool for prototyping Docker extensions) by <a href="https://github.com/clusterhq">@clusterhq</a>
+</li>
 <li>
 <a href="https://github.com/tailhook/vagga">Vagga</a> (Vagga is a containerisation tool without daemons. It is a fully-userspace container engine inspired by Vagrant and Docker, specialized for development environments.) by <a href="https://github.com/tailhook/">@tailhook</a>
 </li>
@@ -514,7 +509,8 @@ If this list is not complete, you can <a href="https://github.com/veggiemonk/awe
 <a href="https://github.com/michaelsauter/crane">crane</a> (Lift containers with ease. Easy orchestration for images and containers) by <a href="https://github.com/michaelsauter">@michaelsauter</a>
 </li>
 <li>
-<a href="https://github.com/rancherio/sherdock">sherdock</a> (Automatic GC of images based on regexp)</li>
+<a href="https://github.com/rancherio/sherdock">sherdock</a> (Automatic GC of images based on regexp) by <a href="https://github.com/rancherio">@rancherio</a>
+</li>
 <li>
 <a href="https://github.com/p8952/bocker">bocker</a> (1) (Docker implemented in 100 lines of bash) by <a href="https://github.com/p8952">p8952</a>
 </li>
@@ -527,6 +523,15 @@ If this list is not complete, you can <a href="https://github.com/veggiemonk/awe
 <li>
 <a href="https://github.com/spotify/docker-gc">docker-gc</a> (A cron job that will delete old stopped containers and unused images) by <a href="https://github.com/spotify">@spotify</a>
 </li>
+<li>
+<a href="https://github.com/wercker/dlayer">dlayer</a> (Stats collector for Docker layers) by <a href="https://github.com/wercker">@wercker</a>
+</li>
+<li>
+<a href="https://github.com/bsideup/forward2docker">forward2docker</a> (Utility to auto forward a port from localhost into ports on Docker containers running in a boot2docker VM) by <a href="https://github.com/bsideup">@bsideup</a>
+</li>
+<li>
+<a href="https://github.com/jlhawn/dockramp">dockramp</a> (Proof of Concept: A Client Driven Docker Image Builder) by <a href="https://github.com/jlhawn">@jlhawn</a>
+</li>
 </ul>
 
 <h2>
@@ -538,7 +543,8 @@ If this list is not complete, you can <a href="https://github.com/veggiemonk/awe
 <li>
 <a href="https://github.com/jenkinsci/docker-plugin/">Docker plugin for Jenkins</a> - The aim of the docker plugin is to be able to use a docker host to dynamically provision a slave, run a single build, then tear-down that slave.</li>
 <li>
-<a href="https://github.com/harbur/captain">Captain</a> - Convert your Git workflow to Docker containers ready for Continuous Delivery.</li>
+<a href="https://github.com/harbur/captain">Captain</a> - Convert your Git workflow to Docker containers ready for Continuous Delivery by <a href="https://github.com/harbur">@harbur</a>
+</li>
 <li>
 <a href="https://hub.jazz.net">IBM DevOps Services</a> - Continuous delivery using a pipeline deployment onto IBM Containers on Bluemix.</li>
 </ul>
@@ -550,7 +556,7 @@ If this list is not complete, you can <a href="https://github.com/veggiemonk/awe
 <li>
 <a href="http://lastbackend.com">Last.Backend</a> - Last.Backend platform is designed for automatization of all routine work with the server and deployment of applications in one click using the visual interface.</li>
 <li>
-<a href="https://github.com/ehazlett/conduit">Conduit</a> (Experimental deployment system for Docker.) by <a href="https://github.com/ehazlett">@ehazlett</a>
+<a href="https://github.com/ehazlett/conduit">Conduit</a> - Experimental deployment system for Docker by <a href="https://github.com/ehazlett">@ehazlett</a>
 </li>
 </ul>
 
@@ -592,7 +598,7 @@ If this list is not complete, you can <a href="https://github.com/veggiemonk/awe
 </ul>
 
 <h2>
-<a id="http-reverse-proxy" class="anchor" href="#http-reverse-proxy" aria-hidden="true"><span class="octicon octicon-link"></span></a>HTTP Reverse Proxy</h2>
+<a id="reverse-proxy" class="anchor" href="#reverse-proxy" aria-hidden="true"><span class="octicon octicon-link"></span></a>Reverse Proxy</h2>
 
 <ul>
 <li>
@@ -600,6 +606,12 @@ If this list is not complete, you can <a href="https://github.com/veggiemonk/awe
 </li>
 <li>
 <a href="https://github.com/zchee/h2o-proxy">h2o-proxy</a> - Automated H2O reverse proxy for Docker containers. An alternative <a href="https://github.com/jwilder/nginx-proxy">jwilder/nginx-proxy</a> by <a href="https://github.com/zchee">@zchee</a>
+</li>
+<li>
+<a href="https://github.com/silarsis/docker-proxy">docker-proxy</a> - Transparent proxy for docker containers, run in a docker container. By <a href="https://github.com/silarsis">@silarsis</a>
+</li>
+<li>
+<a href="https://github.com/mattallty/muguet">muguet</a> - DNS Server &amp; Reverse proxy for Docker environments. By <a href="https://github.com/mattallty">@mattallty</a>
 </li>
 </ul>
 
@@ -637,9 +649,13 @@ If this list is not complete, you can <a href="https://github.com/veggiemonk/awe
 <a href="https://github.com/boot2docker/boot2docker">Boot2Docker</a> (docker for OSX and Windows) -- <a href="http://boot2docker.io/">http://boot2docker.io/</a>
 </li>
 <li>
-<a href="https://github.com/shyiko/docker-vm">docker-vm</a> (A simple and transparent alternative to boot2docker (backed by Vagrant))</li>
+<a href="https://github.com/shyiko/docker-vm">docker-vm</a> (A simple and transparent alternative to boot2docker (backed by Vagrant)) by <a href="https://github.com/shyiko">@shyiko</a>
+</li>
 <li>
-<a href="https://github.com/awvessel/vessel">Vessel</a> (Vessel automates the setup &amp; use of dockerized development environments)</li>
+<a href="https://github.com/awvessel/vessel">Vessel</a> (Vessel automates the setup &amp; use of dockerized development environments) by <a href="https://github.com/awvessel">@awvessel</a>
+</li>
+<li>
+<a href="http://subuser.org">subuser</a> (subuser makes it easy to securely and portably run graphical desktop applications in Docker)</li>
 <li>
 <a href="http://www.octohost.io/">OctoHost</a> (Simple web focused Docker based mini-PaaS server. git push to deploy your websites as needed) by <a href="https://github.com/octohost">@octohost</a>
 </li>
@@ -648,7 +664,7 @@ If this list is not complete, you can <a href="https://github.com/veggiemonk/awe
 </li>
 <li><a href="http://docs.ansible.com/docker_module.html">Ansible - manage docker containers</a></li>
 <li>
-<a href="http://docs.vagrantup.com/v2/docker/basics.html">Vagrant - Docker provider </a> a good starting point is <a href="https://github.com/bubenkoff/vagrant-docker-example">vagrant-docker-example</a> by <a href="https://github.com/bubenkoff">@bubenkoff</a>
+<a href="http://docs.vagrantup.com/v2/docker/basics.html">Vagrant - Docker provider</a> a good starting point is <a href="https://github.com/bubenkoff/vagrant-docker-example">vagrant-docker-example</a> by <a href="https://github.com/bubenkoff">@bubenkoff</a>
 </li>
 <li>
 <a href="https://github.com/CenturyLinkLabs/dray">Dray</a>  An engine for managing the execution of container-based workflows. <a href="http://Dray.it">http://Dray.it</a> by <a href="https://github.com/CenturyLinkLabs/">@CenturyLinkLabs</a>
@@ -656,6 +672,8 @@ If this list is not complete, you can <a href="https://github.com/veggiemonk/awe
 <li>
 <a href="https://github.com/ashmckenzie/percheron">percheron</a> (Organise your Docker containers with muscle and intelligence) by <a href="https://github.com/ashmckenzie">@ashmckenzie</a>
 </li>
+<li>
+<a href="http://dusty.gc.com/">Dusty</a> Managed Docker development environments on OS X</li>
 </ul>
 
 <h2>
@@ -705,7 +723,8 @@ If this list is not complete, you can <a href="https://github.com/veggiemonk/awe
 <a id="storing-images" class="anchor" href="#storing-images" aria-hidden="true"><span class="octicon octicon-link"></span></a>Storing Images</h2>
 
 <ul>
-<li><del><a href="https://github.com/docker/docker-registry">Docker Registry</a> (Registry server for Docker (hosting/delivering of repositories and images))</del></li>
+<li>
+<del><a href="https://github.com/docker/docker-registry">Docker Registry</a> (Registry server for Docker (hosting/delivering of repositories and images))</del> deprecated</li>
 <li>
 <a href="https://github.com/docker/distribution">Docker Registry v2</a> (The Docker toolset to pack, ship, store, and deliver content)</li>
 <li>
@@ -718,18 +737,22 @@ If this list is not complete, you can <a href="https://github.com/veggiemonk/awe
 
 <ul>
 <li>
-<a href="https://github.com/google/cadvisor">cAdvisor</a> (Analyzes resource usage and performance characteristics of running containers. created by Google) </li>
+<a href="http://axibase.com/products/axibase-time-series-database/writing-data/docker-cadvisor/">Axibase Time-Series Database</a> (Long-term retention of container statistics and built-in dashboards for Docker. Collected with native Google cAdvisor storage driver.)</li>
+<li>
+<a href="https://github.com/google/cadvisor">cAdvisor</a> (Analyzes resource usage and performance characteristics of running containers. created by <a href="https://github.com/google">@Google</a> </li>
 <li>
 <a href="https://github.com/dockerana/dockerana">Dockerana</a> (packaged version of Graphite and Grafana, specifically targeted at metrics from Docker.)</li>
 <li>
 <a href="https://github.com/icecrime/docker-mon">Docker-mon</a> (Console-based Docker monitoring) by <a href="https://github.com/icecrime">@icecrime</a>
 </li>
 <li>
-<a href="https://github.com/vegasbrianc/docker-monitoring">InfluxDB, cAdvisor, Grafana</a> (InfluxDB Time series DB in combination with Grafana and cAdvisor)</li>
+<a href="https://github.com/vegasbrianc/docker-monitoring">InfluxDB, cAdvisor, Grafana</a> (InfluxDB Time series DB in combination with Grafana and cAdvisor) by <a href="https://github.com/vegasbrianc">@vegasbrianc</a>
+</li>
 <li>
 <a href="http://prometheus.io/">Prometheus</a> (Open-source service monitoring system and time series database)</li>
 <li>
-<a href="https://github.com/tobegit3hub/seagull">Seagull</a> (Friendly Web UI to monitor docker daemon.)</li>
+<a href="https://github.com/tobegit3hub/seagull">Seagull</a> (Friendly Web UI to monitor docker daemon.) by <a href="https://github.com/tobegit3hub">@tobegit3hub</a>
+</li>
 <li>
 <a href="http://www.sysdig.org/">Sysdig</a>: An open source troubleshooting tool that provides a rich set of real-time, system-level information. It has container-specific features and is very useful in Docker environments.</li>
 <li>
@@ -749,9 +772,11 @@ If this list is not complete, you can <a href="https://github.com/veggiemonk/awe
 
 <ul>
 <li>
-<a href="https://github.com/gocardless/logjam">LogJam</a> (Logjam is a log forwarder designed to listen on a local port, receive log entries over UDP, and forward these messages on to a log collecton server (such as logstash).)</li>
+<a href="https://github.com/gocardless/logjam">LogJam</a> (Logjam is a log forwarder designed to listen on a local port, receive log entries over UDP, and forward these messages on to a log collecton server (such as logstash).) by <a href="https://github.com/gocardless">@gocardless</a>
+</li>
 <li>
-<a href="https://registry.hub.docker.com/u/kiyoto/docker-fluentd/">Docker-Fluentd</a>: Docker container to Log Other Containers' Logs.  One can aggregate the logs of Docker containers running on the same host using Fluentd.</li>
+<a href="https://github.com/kiyoto/docker-fluentd">Docker-Fluentd</a>: (Docker container to Log Other Containers' Logs. One can aggregate the logs of Docker containers running on the same host using Fluentd.) by <a href="https://github.com/kiyoto">@kiyoto</a>
+</li>
 <li>
 <a href="https://github.com/gliderlabs/logspout">Logspout</a> (Log routing for Docker container logs) by <a href="https://github.com/gliderlabs">@gliderlabs</a>
 </li>
@@ -762,16 +787,19 @@ If this list is not complete, you can <a href="https://github.com/veggiemonk/awe
 
 <ul>
 <li>
-<a href="https://github.com/newrelic/centurion">Centurion</a>: Centurion is a mass deployment tool for Docker fleets. It takes containers from a Docker registry and runs them on a fleet of hosts with the correct environment variables, host volume mappings, and port mappings.</li>
+<a href="https://github.com/newrelic/centurion">Centurion</a>: Centurion is a mass deployment tool for Docker fleets. It takes containers from a Docker registry and runs them on a fleet of hosts with the correct environment variables, host volume mappings, and port mappings. By <a href="https://github.com/newrelic">@newrelic</a>
+</li>
 <li>
-<a href="https://github.com/brooklyncentral/clocker">Clocker</a>: Clocker creates and manages a Docker cloud infrastructure. Clocker supports single-click deployments and runtime management of multi-node applications that run as containers distributed across multiple hosts. It leverages <a href="https://github.com/zettio/weave">Weave</a> for networking and [Brooklyn][boorklyn] for application blueprints.</li>
+<a href="https://github.com/brooklyncentral/clocker">Clocker</a>: Clocker creates and manages a Docker cloud infrastructure. Clocker supports single-click deployments and runtime management of multi-node applications that run as containers distributed across multiple hosts. It leverages <a href="https://github.com/zettio/weave">Weave</a> for networking and [Brooklyn][boorklyn] for application blueprints. By <a href="https://github.com/brooklyncentral">@brooklyncentral</a>
+</li>
 <li>
 <a href="http://www.cloud66.com">Cloud 66</a> - Full-stack hosted container management as a service</li>
 <li>
 <a href="https://github.com/netvarun/docket">Docket</a>: Custom docker registry that allows for lightning fast deploys through bittorrent by <a href="https://github.com/netvarun/">@netvarun</a>
 </li>
 <li>
-<a href="https://github.com/longshoreman/longshoreman">Longshoreman</a>: Longshoreman automates application deployment using Docker. Just create a Docker repository (or use a service), configure the cluster using AWS or Digital Ocean (or whatever you like) and deploy applications using a Heroku-like CLI tool.</li>
+<a href="https://github.com/longshoreman/longshoreman">Longshoreman</a>: Longshoreman automates application deployment using Docker. Just create a Docker repository (or use a service), configure the cluster using AWS or Digital Ocean (or whatever you like) and deploy applications using a Heroku-like CLI tool. By <a href="https://github.com/longshoreman">longshoreman</a>
+</li>
 </ul>
 
 <h2>
@@ -817,25 +845,41 @@ If this list is not complete, you can <a href="https://github.com/veggiemonk/awe
 <li>
 <a href="https://github.com/dokku-alt/dokku-alt">dokku-alt</a> (Dokku fork with Dockerfile support, database plugins, ACL and more)</li>
 <li>
-<a href="https://mesosphere.com/learn/launch-docker-container-on-mesosphere/">Docker container on Mesos</a> (Docker plus Mesosphere provides an easy way to automate and scale deployment of containers in a production environment.)</li>
+<a href="https://mesosphere.com/learn/launch-docker-container-on-mesosphere/">Docker container on Mesos</a> (Docker plus Mesosphere provides an easy way to automate and scale deployment of containers in a production environment)</li>
 <li>
-<a href="https://mesosphere.github.io/marathon/docs/">Marathon</a> (Marathon is a private PaaS built on Mesos. It automatically handles hardware or software failures and ensures that an app is "always on".)</li>
+<a href="https://mesosphere.github.io/marathon/docs/">Marathon</a> (Marathon is a private PaaS built on Mesos. It automatically handles hardware or software failures and ensures that an app is "always on")</li>
 <li>
-<a href="https://github.com/hashicorp/serf">Serf</a> (Service orchestration and management tool.) by <a href="https://github.com/hashicorp">@hashicorp</a>
+<a href="https://github.com/hashicorp/serf">Serf</a> (Service orchestration and management tool) by <a href="https://github.com/hashicorp">@hashicorp</a>
 </li>
 <li>
 <a href="https://github.com/ClusterHQ/flocker">Flocker</a> (Flocker is a data volume manager and multi-host Docker cluster management tool) by <a href="https://github.com/ClusterHQ">@ClusterHQ</a>
 </li>
 <li>
-<a href="http://decking.io/">Decking</a>: (Decking aims to simplify the creation, organsation and running of clusters of Docker containers in a way which is familiar to developers.)</li>
+<a href="http://decking.io/">Decking</a>: (Decking aims to simplify the creation, organsation and running of clusters of Docker containers in a way which is familiar to developers)</li>
 <li>
-<a href="https://github.com/toscanini/maestro">Maestro</a> (Maestro provides the ability to easily launch, orchestrate and manage mulitiple Docker containers as single unit.)</li>
+<a href="https://github.com/toscanini/maestro">Maestro</a> (Maestro provides the ability to easily launch, orchestrate and manage mulitiple Docker containers as single unit) by <a href="https://github.com/toscanini">@tascanini</a>
+</li>
 <li>
-<a href="http://citadeltoolkit.org/">Citadel</a> (Citadel is a toolkit for scheduling containers on a Docker cluster.)</li>
+<a href="http://citadeltoolkit.org/">Citadel</a> (Citadel is a toolkit for scheduling containers on a Docker cluster)</li>
 <li>
 <a href="http://www.cloudslang.io/">CloudSlang</a> (CloudSlang is a workflow engine to create Docker process automation)</li>
 <li>
-<a href="https://github.com/prologic/autodock">autodock</a> (Automating Docker; also provides <a href="http://shortcircuit.net.au/%7Eprologic/blog/article/2015/03/24/a-docker-based-mini-paas/">A Docker based mini-PaaS</a>
+<a href="https://github.com/prologic/autodock">autodock</a> (Daemon for Docker Automation) by <a href="https://github.com/prologic">@prologic</a>
+</li>
+<li>
+<a href="https://github.com/tubesandlube/blimp">blimp</a> Uses Docker Machine to easily move a container from one Docker host to another, show containers running against all of your hosts, replicate a container across multiple hosts and more. By <a href="https://github.com/defermat">@defermat</a> and <a href="https://github.com/schvin">@schvin</a>
+</li>
+</ul>
+
+<h2>
+<a id="security-1" class="anchor" href="#security-1" aria-hidden="true"><span class="octicon octicon-link"></span></a>Security</h2>
+
+<ul>
+<li>
+<a href="https://github.com/docker/docker-bench-security">docker-bench-security</a> script that checks for dozens of common best-practices around deploying Docker containers in production. By <a href="https://github.com/docker">@docker</a>
+</li>
+<li>
+<a href="https://github.com/docker/notary">notary</a> a server and a client for running and interacting with trusted collections. By <a href="https://github.com/docker">@docker</a>
 </li>
 </ul>
 
@@ -847,9 +891,10 @@ If this list is not complete, you can <a href="https://github.com/veggiemonk/awe
 <a href="https://github.com/progrium/docker-consul">docker-consul</a> by <a href="https://github.com/progrium">@progrium</a>
 </li>
 <li>
-<a href="https://github.com/coreos/etcd">etcd</a>: A highly-available key value store for shared configuration and service discovery</li>
+<a href="https://github.com/coreos/etcd">etcd</a>: A highly-available key value store for shared configuration and service discovery by <a href="https://github.com/coreos">@coreOS</a>
+</li>
 <li>
-<a href="https://github.com/cpuguy83/docker-grand-ambassador">Docker Grand Ambassador</a> This is a fully dynamic docker link ambassador. + <a href="http://docs.docker.com/articles/ambassador_pattern_linking/">Article</a>
+<a href="https://github.com/cpuguy83/docker-grand-ambassador">Docker Grand Ambassador</a> This is a fully dynamic docker link ambassador. + <a href="http://docs.docker.com/articles/ambassador_pattern_linking/">Article</a> by <a href="https://github.com/cpuguy83">@cpuguy83</a>
 </li>
 <li>
 <a href="http://www.confd.io/">confd</a>: Manage local application configuration files using templates and data from etcd or consul.</li>
@@ -972,4 +1017,3 @@ If this list is not complete, you can <a href="https://github.com/veggiemonk/awe
 
   </body>
 </html>
-
